@@ -12,9 +12,12 @@ body {
 }
 
 .tela {
+  display: flex;
+  flex-direction: column;
   width: 500px;
   height: 320px;
   background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+  border: 2px solid #838383;
 }
 
 .teclado {
@@ -25,6 +28,7 @@ body {
 .teclado--linha {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .teclado--botao {
@@ -39,4 +43,45 @@ body {
   margin: 10px;
   cursor: pointer;
   box-shadow: 3px 3px 0px #685e5e;
+}
+
+/*STYLES DOS BOTÕES*/
+.botao--branco {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+}
+
+.botao--corrige {
+  background-color: #f09046;
+  color: black;
+  font-size: 15px;
+}
+
+.botao--confirma {
+  background-color: #48c079;
+  color: black;
+  font-size: 15px;
+  width: 90px;
+  height: 50px;
+}
+
+/*STYLES DA TELA*/
+
+.d-1 {
+  display: flex;
+  flex: 1;
+}
+.d-1-left {
+  flex: 1;
+}
+
+.d-1-right {
+  width: 90px;
+}
+.d-2 {
+  height: 50px;
+  font-size: 14px;
+  padding-left: 10px;
+  border-top: 2px solid #000;
 }
